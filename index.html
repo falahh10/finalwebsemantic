@@ -1,187 +1,245 @@
 <!DOCTYPE html>
 <html lang="id">
 
+
 <head>
 
+
 <meta charset="UTF-8">
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Falah Zikri — Semantic Web Profile</title>
 
-<meta name="description"
-content="Profil Falah Zikri mahasiswa Ilmu Komputer dengan implementasi Semantic Web Schema.org JSON-LD">
+
+<title>Falah Zikri - Profile</title>
+
+
 
 <link rel="stylesheet" href="style.css">
 
 
-<!-- SCHEMA.ORG JSON-LD -->
+
+<!-- ===============================
+     SCHEMA.ORG JSON-LD
+================================ -->
+
 
 <script type="application/ld+json">
 
 {
+
 "@context":"https://schema.org",
 
-"@graph":[
 
-{
 "@type":"Person",
 
-"name":"Falah Zikri",
-"givenName":"Falah",
-"familyName":"Zikri",
 
-"jobTitle":"Web Developer & Backend Developer",
+"name":"Falah Zikri",
+
+
+"jobTitle":"Information System Student",
+
 
 "description":
-"Mahasiswa Ilmu Komputer yang memiliki minat pada pengembangan website, backend, cloud computing dan UI UX Design.",
+"Mahasiswa Ilmu Komputer Universitas Halu Oleo yang memiliki ketertarikan pada Sistem Informasi, pengembangan aplikasi berbasis web, backend development, database, cloud computing, dan UI/UX.",
 
-"url":
-"https://falahh10.github.io/semantic-profile",
+
 
 "image":
-"assets/foto-profil.jpg",
-
-"email":
-"falahzikri10@gmail.com",
-
-"sameAs":[
-"https://github.com/falahh10",
-"https://instagram.com/falah.hh_"
-],
+"https://example.com/assets/foto-profil.jpg",
 
 
-"alumniOf":{
 
-"@type":"CollegeOrUniversity",
+"affiliation":{
 
-"name":"Universitas Halu Oleo",
+    "@type":"CollegeOrUniversity",
 
-"url":"https://uho.ac.id"
+    "name":"Universitas Halu Oleo"
 
 },
+
 
 
 "knowsAbout":[
 
-{
-"@type":"DefinedTerm",
-"name":"Laravel",
-"description":"Framework PHP untuk pengembangan aplikasi web."
-},
 
-{
-"@type":"DefinedTerm",
-"name":"Semantic Web",
-"description":"Konsep web dengan data terstruktur agar dapat dipahami mesin."
-},
+    {
 
-{
-"@type":"DefinedTerm",
-"name":"UI UX Design",
-"description":"Perancangan pengalaman dan antarmuka pengguna."
-}
+    "@type":"DefinedTerm",
+
+    "name":"Laravel"
+
+    },
+
+
+    {
+
+    "@type":"DefinedTerm",
+
+    "name":"PHP"
+
+    },
+
+
+    {
+
+    "@type":"DefinedTerm",
+
+    "name":"HTML CSS"
+
+    },
+
+
+    {
+
+    "@type":"DefinedTerm",
+
+    "name":"Javascript"
+
+    },
+
+
+    {
+
+    "@type":"DefinedTerm",
+
+    "name":"MySQL"
+
+    },
+
+
+    {
+
+    "@type":"DefinedTerm",
+
+    "name":"Cloud Computing"
+
+    },
+
+
+    {
+
+    "@type":"DefinedTerm",
+
+    "name":"UI UX Design"
+
+    }
+
 
 ],
 
 
-"memberOf":[
 
-{
-"@type":"Organization",
-"name":"Himpunan Mahasiswa Ilmu Komputer"
-}
+"memberOf":{
+
+
+    "@type":"Organization",
+
+
+    "name":
+    "Himpunan Mahasiswa Program Studi Ilmu Komputer"
+
+
+},
+
+
+
+"sameAs":[
+
+
+"https://instagram.com/falah.hh_",
+
+
+"https://linkedin.com/in/falahzikri",
+
+
+"https://github.com/falahh10"
+
 
 ]
 
-},
-
-
-
-{
-"@type":"CollegeOrUniversity",
-
-"name":"Universitas Halu Oleo",
-
-"location":"Kendari, Indonesia"
-
-},
-
-
-
-{
-"@type":"CreativeWork",
-
-"name":"Aplikasi Sistem Informasi Mahasiswa",
-
-"description":
-"Aplikasi CRUD berbasis Laravel dan MySQL untuk pengelolaan data mahasiswa.",
-
-
-"creator":{
-
-"@type":"Person",
-
-"name":"Falah Zikri"
-
-}
-
-},
-
-
-
-{
-"@type":"DefinedTerm",
-
-"name":"Cloud Computing",
-
-"description":
-"Kemampuan melakukan deployment aplikasi pada server cloud."
-
-}
-
-
-]
 
 }
 
 </script>
 
+
+
+
+
+
 </head>
+
+
 
 
 
 <body>
 
 
-<!-- NAVIGATION -->
+
+
 
 <header class="nav">
 
+
+
 <div class="nav-inner">
+
+
 
 <div class="brand">
 
-FALAH ZIKRI<span>.</span>
+
+FALAH PORTFOLIO<span>.</span>
+
 
 </div>
+
+
+
+
 
 
 <nav>
 
-<a href="#profil">Profil</a>
 
-<a href="#pendidikan">Pendidikan</a>
 
-<a href="#skill">Skill</a>
+<a href="index.html">
+Profil
+</a>
 
-<a href="#project">Project</a>
 
-<a href="#organisasi">Organisasi</a>
+<a href="pendidikan.html">
+Pendidikan
+</a>
+
+
+<a href="skill.html">
+Skill
+</a>
+
+
+<a href="project.html">
+Project
+</a>
+
+
+<a href="organisasi.html">
+Organisasi
+</a>
+
+
 
 </nav>
 
 
+
+
+
 </div>
+
 
 </header>
 
@@ -189,56 +247,179 @@ FALAH ZIKRI<span>.</span>
 
 
 
-<!-- HERO -->
+
+
 
 <section class="hero">
 
 
-<div>
+
+
+
+
+
+<div class="text">
+
+
+
+
 
 
 <p class="schema-tag">
+
 ⟨ Person ⟩
+
 </p>
 
 
+
+
+
+
+
+
 <h1>
+
 Falah Zikri
+
 </h1>
 
 
+
+
+
+
+
+
+
 <h3>
-Mahasiswa Ilmu Komputer
+
+Program Studi Ilmu Komputer
+
 <br>
-Web Developer & Backend Developer
+
+Universitas Halu Oleo
+
 </h3>
+
+
+
+
+
+
 
 
 <p>
 
-Saya merupakan mahasiswa Ilmu Komputer yang memiliki
-ketertarikan pada pengembangan aplikasi web,
-backend system, database, cloud computing,
-dan desain antarmuka pengguna.
+
+Saya merupakan mahasiswa Ilmu Komputer Universitas Halu Oleo yang memiliki ketertarikan pada bidang Sistem Informasi. Ketertarikan tersebut membuat saya memilih untuk mendalami peminatan Sistem Informasi, khususnya dalam pengembangan aplikasi berbasis web, perancangan sistem, backend development, pengelolaan database, cloud computing, serta desain antarmuka pengguna. Melalui bidang ini, saya terus mengembangkan kemampuan dalam menciptakan solusi teknologi yang efektif dan bermanfaat.
+
+
 
 </p>
 
 
-<a class="button" href="#project">
-Lihat Project
+
+
+
+
+
+
+<div class="social-button">
+
+
+
+
+
+
+
+
+<a class="button"
+
+href="https://instagram.com/falah.hh_"
+
+target="_blank">
+
+Instagram
+
 </a>
 
 
+
+
+
+
+
+
+
+<a class="button"
+
+href="https://linkedin.com/in/falahzikri"
+
+target="_blank">
+
+LinkedIn
+
+</a>
+
+
+
+
+
+
+
+
+
+<a class="button"
+
+href="https://github.com/falahh10"
+
+target="_blank">
+
+GitHub
+
+</a>
+
+
+
+
+
+
+
 </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
 
 
 
 <div class="photo">
 
+
+
 <img src="assets/foto-profil.jpg"
-alt="Foto Falah Zikri">
+
+alt="Foto Profil Falah Zikri">
+
+
 
 </div>
+
+
+
+
+
 
 
 </section>
@@ -246,308 +427,6 @@ alt="Foto Falah Zikri">
 
 
 
-
-
-<main>
-
-
-
-<!-- PROFIL -->
-
-<section class="block" id="profil">
-
-<p class="schema-tag">
-⟨ Person.description ⟩
-</p>
-
-
-<h2>
-Tentang Saya
-</h2>
-
-
-<p>
-
-Saya adalah mahasiswa Program Studi Ilmu Komputer
-Universitas Halu Oleo yang fokus mempelajari
-pengembangan perangkat lunak.
-
-Memiliki pengalaman membuat aplikasi berbasis
-Laravel, Java, database, serta implementasi
-Semantic Web menggunakan Schema.org.
-
-</p>
-
-</section>
-
-
-
-
-
-
-<!-- PENDIDIKAN -->
-
-
-<section class="block" id="pendidikan">
-
-
-<p class="schema-tag">
-⟨ alumniOf → CollegeOrUniversity ⟩
-</p>
-
-
-<h2>
-Riwayat Pendidikan
-</h2>
-
-
-<div class="card">
-
-<h3>
-Universitas Halu Oleo
-</h3>
-
-<p>
-Program Studi Ilmu Komputer
-</p>
-
-<p>
-2022 - Sekarang
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-SMK/SMA
-</h3>
-
-<p>
-Riwayat pendidikan sebelumnya
-</p>
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- SKILL -->
-
-
-<section class="block" id="skill">
-
-
-<p class="schema-tag">
-⟨ knowsAbout → DefinedTerm ⟩
-</p>
-
-
-<h2>
-Skill
-</h2>
-
-
-<div class="tags">
-
-<span>Laravel</span>
-
-<span>PHP</span>
-
-<span>Java</span>
-
-<span>HTML CSS</span>
-
-<span>JavaScript</span>
-
-<span>MySQL</span>
-
-<span>UI UX</span>
-
-<span>Cloud Computing</span>
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- PROJECT -->
-
-
-<section class="block" id="project">
-
-
-<p class="schema-tag">
-⟨ CreativeWork ⟩
-</p>
-
-
-<h2>
-Project
-</h2>
-
-
-
-<div class="grid">
-
-
-<div class="card">
-
-<h3>
-Sistem Informasi Mahasiswa
-</h3>
-
-<p>
-Aplikasi CRUD Laravel dengan database MySQL,
-validasi data dan autentikasi.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-Semantic Web Profile
-</h3>
-
-<p>
-Website profil dengan implementasi JSON-LD Schema.org.
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- ORGANISASI -->
-
-
-<section class="block" id="organisasi">
-
-
-<p class="schema-tag">
-⟨ memberOf → Organization ⟩
-</p>
-
-
-<h2>
-Organisasi
-</h2>
-
-
-<div class="card">
-
-
-<h3>
-Himpunan Mahasiswa Ilmu Komputer
-</h3>
-
-
-<p>
-Aktif dalam kegiatan akademik dan pengembangan teknologi.
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- RELASI SEMANTIK -->
-
-
-<section class="block">
-
-
-<h2>
-Relasi Semantik Data
-</h2>
-
-
-<table>
-
-
-<tr>
-
-<th>Subject</th>
-
-<th>Predicate</th>
-
-<th>Object</th>
-
-</tr>
-
-
-<tr>
-
-<td>Falah Zikri</td>
-
-<td>kuliah di</td>
-
-<td>Universitas Halu Oleo</td>
-
-</tr>
-
-
-
-<tr>
-
-<td>Falah Zikri</td>
-
-<td>memiliki skill</td>
-
-<td>Laravel</td>
-
-</tr>
-
-
-
-<tr>
-
-<td>Falah Zikri</td>
-
-<td>mengerjakan</td>
-
-<td>Sistem Informasi Mahasiswa</td>
-
-</tr>
-
-
-</table>
-
-
-</section>
-
-
-
-</main>
 
 
 
@@ -555,16 +434,25 @@ Relasi Semantik Data
 
 <footer>
 
+
 © 2026 Falah Zikri
+
 
 <br>
 
-Semantic Web Final Project
+
+Information System Portfolio
+
 
 </footer>
 
 
 
+
+
+
+
 </body>
+
 
 </html>
