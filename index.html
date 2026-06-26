@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="id">
 
-
 <head>
-
 
 <meta charset="UTF-8">
 
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
 
 <title>Falah Zikri - Profile</title>
 
 
-
 <link rel="stylesheet" href="style.css">
-
-
 
 
 
@@ -26,69 +19,44 @@
      SCHEMA.ORG JSON-LD
 ===================================== -->
 
-
 <script type="application/ld+json">
 
 {
-
 "@context":"https://schema.org",
 
+"@graph":[
+
+
+{
 
 "@type":"Person",
 
-
 "name":"Falah Zikri",
 
+"identifier":"FALAH-001",
 
-
-"url":
-"http://localhost/finalwebsemantic/index.html",
-
-
-
-"image":
-"assets/foto-profil.jpg",
-
-
+"jobTitle":"Information System Student",
 
 
 "description":
-
-"Mahasiswa Ilmu Komputer Universitas Halu Oleo dengan minat pada Sistem Informasi, pengembangan aplikasi web, backend development, database, cloud computing, dan UI/UX Design.",
-
+"Mahasiswa Ilmu Komputer Universitas Halu Oleo dengan minat pada Sistem Informasi, pengembangan aplikasi web, backend development, database, cloud computing, dan UI UX Design.",
 
 
 
-
-"jobTitle":
-
-"Information System Student",
+"image":"assets/foto-profil.jpg",
 
 
 
-
-
-
-"alumniOf":{
+"affiliation":{
 
 
 "@type":"CollegeOrUniversity",
 
+"name":"Universitas Halu Oleo",
 
-"name":
-
-"Universitas Halu Oleo",
-
-
-"department":
-
-"Program Studi Ilmu Komputer"
-
+"department":"Program Studi Ilmu Komputer"
 
 },
-
-
-
 
 
 
@@ -96,81 +64,84 @@
 "knowsAbout":[
 
 
-
 {
 
 "@type":"DefinedTerm",
 
-"name":"Laravel"
+"name":"Laravel",
+
+"termCode":"SKILL-001"
 
 },
 
 
-
 {
 
 "@type":"DefinedTerm",
 
-"name":"PHP"
+"name":"PHP",
+
+"termCode":"SKILL-002"
 
 },
 
 
-
 {
 
 "@type":"DefinedTerm",
 
-"name":"HTML CSS"
+"name":"HTML CSS",
+
+"termCode":"SKILL-003"
 
 },
 
 
-
 {
 
 "@type":"DefinedTerm",
 
-"name":"Javascript"
+"name":"JavaScript",
+
+"termCode":"SKILL-004"
 
 },
 
 
-
 {
 
 "@type":"DefinedTerm",
 
-"name":"MySQL Database"
+"name":"MySQL Database",
+
+"termCode":"SKILL-005"
 
 },
 
 
-
 {
 
 "@type":"DefinedTerm",
 
-"name":"Cloud Computing"
+"name":"Cloud Computing",
+
+"termCode":"SKILL-006"
 
 },
 
 
-
 {
 
 "@type":"DefinedTerm",
 
-"name":"UI UX Design"
+"name":"UI UX Design",
+
+"termCode":"SKILL-007"
 
 }
 
 
-
 ],
-
-
-
 
 
 
@@ -180,21 +151,42 @@
 
 "@type":"Organization",
 
-
-"name":
-
-"Himpunan Mahasiswa Program Studi Ilmu Komputer"
-
+"name":"Himpunan Mahasiswa Program Studi Ilmu Komputer"
 
 },
 
 
 
 
+"subjectOf":{
+
+
+"@type":"CreativeWork",
+
+"name":"Semantic Web Profile Website",
+
+"description":
+"Website portfolio pribadi berbasis Schema.org JSON-LD untuk menerapkan konsep Semantic Web."
+
+},
 
 
 
-"subjectOf":[
+
+"sameAs":[
+
+
+"https://instagram.com/falah.hh_",
+
+"https://linkedin.com/in/falahzikri",
+
+"https://github.com/falahh10"
+
+
+]
+
+},
+
 
 
 
@@ -202,25 +194,21 @@
 {
 
 
-"@type":"CreativeWork",
+"@type":"CollegeOrUniversity",
+
+"name":"Universitas Halu Oleo",
+
+"url":"https://uho.ac.id",
 
 
-"name":
-
-"Semantic Web Profile Website",
+"address":{
 
 
-"description":
+"@type":"PostalAddress",
 
-"Website profil pribadi berbasis Schema.org JSON-LD untuk menerapkan konsep Semantic Web.",
+"addressLocality":"Kendari",
 
-
-
-"creator":{
-
-"@type":"Person",
-
-"name":"Falah Zikri"
+"addressCountry":"Indonesia"
 
 }
 
@@ -228,6 +216,16 @@
 },
 
 
+
+
+{
+
+
+"@type":"Organization",
+
+"name":"Himpunan Mahasiswa Program Studi Ilmu Komputer"
+
+},
 
 
 
@@ -237,82 +235,19 @@
 
 "@type":"SoftwareApplication",
 
+"name":"Falah Resto App",
 
-"name":
+"applicationCategory":"BusinessApplication",
 
-"Falah Resto App",
-
-
+"operatingSystem":"Web Browser",
 
 "description":
-
-"Aplikasi sistem informasi rumah makan berbasis Laravel dan database.",
-
-
-
-
-"applicationCategory":
-
-"BusinessApplication",
-
-
-
-
-"operatingSystem":
-
-"Web Browser",
-
-
-
-
-"creator":{
-
-
-"@type":"Person",
-
-
-"name":"Falah Zikri"
-
+"Aplikasi sistem informasi rumah makan berbasis Laravel dan database."
 
 }
-
-
-
-}
-
-
-
-
-
-
-],
-
-
-
-
-
-
-
-"sameAs":[
-
-
-
-"https://instagram.com/falah.hh_",
-
-
-
-"https://linkedin.com/in/falahzikri",
-
-
-
-"https://github.com/falahh10"
-
 
 
 ]
-
-
-
 
 
 }
@@ -320,20 +255,7 @@
 </script>
 
 
-
-
-
-
-
-
-
 </head>
-
-
-
-
-
-
 
 
 
@@ -341,32 +263,18 @@
 
 
 
-
-
-
-
 <header class="nav">
-
 
 
 <div class="nav-inner">
 
 
 
-
-
 <div class="brand">
 
-
-FALAH PORTFOLIO<span>.</span>
-
+F2<span>.</span>
 
 </div>
-
-
-
-
-
 
 
 
@@ -374,73 +282,45 @@ FALAH PORTFOLIO<span>.</span>
 <nav>
 
 
-
-
 <a href="index.html">
-
 Profil
-
 </a>
 
-
-
+<a href="tentang.html">Tentang Saya</a>
 
 <a href="pendidikan.html">
-
 Pendidikan
-
 </a>
-
-
 
 
 <a href="skill.html">
-
 Skill
-
 </a>
-
-
 
 
 <a href="project.html">
-
 Project
-
 </a>
-
-
 
 
 <a href="organisasi.html">
-
 Organisasi
-
 </a>
 
 
-
-
+<a href="semantic.html">
+Semantic Web
+</a>
 
 
 </nav>
 
 
 
-
-
-
-
-
-
 </div>
 
 
-
 </header>
-
-
-
 
 
 
@@ -453,21 +333,13 @@ Organisasi
 
 
 
-
-
 <div class="text">
-
-
-
-
 
 
 
 <p class="schema-tag">
 
-
-⟨ Person ⟩
-
+⟨ Profil Mahasiswa ⟩
 
 </p>
 
@@ -475,15 +347,9 @@ Organisasi
 
 
 
-
-
-
-
 <h1>
 
-
 Falah Zikri
-
 
 </h1>
 
@@ -491,21 +357,13 @@ Falah Zikri
 
 
 
-
-
-
-
 <h3>
-
 
 Program Studi Ilmu Komputer
 
-
 <br>
 
-
 Universitas Halu Oleo
-
 
 </h3>
 
@@ -514,21 +372,11 @@ Universitas Halu Oleo
 
 
 
-
-
-
 <p>
 
-
-Saya merupakan mahasiswa Ilmu Komputer Universitas Halu Oleo yang memiliki ketertarikan pada bidang Sistem Informasi. Ketertarikan tersebut membuat saya memilih untuk mendalami peminatan Sistem Informasi, khususnya dalam pengembangan aplikasi berbasis web, perancangan sistem, backend development, pengelolaan database, cloud computing, serta desain antarmuka pengguna. Melalui bidang ini, saya terus mengembangkan kemampuan dalam menciptakan solusi teknologi yang efektif dan bermanfaat.
-
+Saya merupakan mahasiswa Ilmu Komputer Universitas Halu Oleo yang memiliki ketertarikan pada bidang Sistem Informasi. Saya berfokus pada pengembangan aplikasi berbasis web, backend development, database, cloud computing, serta desain antarmuka pengguna. Saya terus mengembangkan kemampuan teknologi untuk menciptakan solusi digital yang efektif.
 
 </p>
-
-
-
-
-
 
 
 
@@ -541,20 +389,14 @@ Saya merupakan mahasiswa Ilmu Komputer Universitas Halu Oleo yang memiliki keter
 
 
 
-
-
 <a class="button"
-
 
 href="https://instagram.com/falah.hh_"
 
-
 target="_blank">
-
 
 Instagram
 
-
 </a>
 
 
@@ -562,25 +404,15 @@ Instagram
 
 
 
-
-
-
 <a class="button"
-
 
 href="https://linkedin.com/in/falahzikri"
 
-
 target="_blank">
-
 
 LinkedIn
 
-
 </a>
-
-
-
 
 
 
@@ -589,39 +421,22 @@ LinkedIn
 
 <a class="button"
 
-
 href="https://github.com/falahh10"
-
 
 target="_blank">
 
-
 GitHub
-
 
 </a>
 
 
 
 
-
-
-
-
 </div>
 
 
 
-
-
-
-
-
-
 </div>
-
-
-
 
 
 
@@ -631,19 +446,12 @@ GitHub
 <div class="photo">
 
 
-
 <img src="assets/foto-profil.jpg"
-
 
 alt="Foto Profil Falah Zikri">
 
 
-
 </div>
-
-
-
-
 
 
 
@@ -656,27 +464,15 @@ alt="Foto Profil Falah Zikri">
 
 
 
-
-
-
 <footer>
-
 
 © 2026 Falah Zikri
 
-
 <br>
-
 
 Information System Portfolio
 
-
 </footer>
-
-
-
-
-
 
 
 

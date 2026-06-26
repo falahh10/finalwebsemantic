@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Semantic Web - Falah Zikri</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+<!-- JSON-LD SCHEMA.ORG -->
+
+<script type="application/ld+json">
+
+{
+ "@context":"https://schema.org",
+
+ "@graph":[
+
+
+{
+"@type":"Person",
+
+"name":"Falah Zikri",
+
+"identifier":"FALAH-001",
+
+"jobTitle":"Mahasiswa Ilmu Komputer",
+
+
+
+"alumniOf":{
+
+ "@type":"HighSchool",
+
+ "name":"SMA Negeri 2 Raha"
+
+},
+
+
+
+"studentOf":{
+
+ "@type":"CollegeOrUniversity",
+
+ "name":"Universitas Halu Oleo",
+
+ "department":"Program Studi Ilmu Komputer"
+
+},
+
+
+
+"knowsAbout":[
+
+
+{
+"@type":"DefinedTerm",
+"name":"Laravel"
+},
+
+
+{
+"@type":"DefinedTerm",
+"name":"Cloud Computing"
+},
+
+
+{
+"@type":"DefinedTerm",
+"name":"Web Development"
+}
+
+
+],
+
+
+
+"memberOf":{
+
+"@type":"Organization",
+
+"name":"HMPS Ilmu Komputer"
+
+},
+
+
+
+"subjectOf":{
+
+"@type":"CreativeWork",
+
+"name":"Semantic Web Profile Website"
+
+}
+
+
+},
+
+
+
+
+{
+
+
+"@type":"SoftwareApplication",
+
+"name":"Falah Portfolio Website",
+
+"applicationCategory":"WebApplication",
+
+
+
+"author":{
+
+"@type":"Person",
+
+"name":"Falah Zikri"
+
+}
+
+
+}
+
+
+]
+
+}
+
+</script>
+
+
+
+<style>
+
+
+.semantic-container{
+
+padding:120px 8%;
+
+}
+
+
+.semantic-title{
+
+font-size:40px;
+
+margin-bottom:40px;
+
+}
+
+
+
+.card-box{
+
+background:#101d35;
+
+border:1px solid #31466d;
+
+border-radius:20px;
+
+padding:30px;
+
+margin-bottom:50px;
+
+}
+
+
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+color:white;
+
+}
+
+
+
+th{
+
+background:#172c52;
+
+padding:15px;
+
+}
+
+
+
+td{
+
+padding:15px;
+
+border-bottom:1px solid #30415f;
+
+}
+
+
+
+.diagram{
+
+background:#071426;
+
+border-radius:20px;
+
+padding:40px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+
+
+svg{
+
+width:900px;
+
+max-width:100%;
+
+}
+
+
+
+.node{
+
+fill:#13294b;
+
+stroke:white;
+
+stroke-width:2;
+
+}
+
+
+
+.text-node{
+
+fill:white;
+
+font-size:18px;
+
+font-family:Arial;
+
+}
+
+
+
+.line{
+
+stroke:white;
+
+stroke-width:2;
+
+}
+
+
+
+.relation{
+
+fill:#ffd84d;
+
+font-size:16px;
+
+}
+
+
+
+.json-box{
+
+background:#050b18;
+
+color:#00ff99;
+
+padding:25px;
+
+border-radius:15px;
+
+overflow:auto;
+
+font-family:monospace;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<header class="nav">
+
+
+<div class="nav-inner">
+
+
+<div class="brand">
+
+F2<span>.</span>
+
+</div>
+
+
+<nav>
+
+
+<a href="index.html">Profil</a>
+
+<a href="tentang.html">Tentang Saya</a>
+
+<a href="pendidikan.html">Pendidikan</a>
+
+<a href="skill.html">Skill</a>
+
+<a href="project.html">Project</a>
+
+<a href="organisasi.html">Organisasi</a>
+
+<a href="semantic.html">Semantic Web</a>
+
+
+</nav>
+
+
+</div>
+
+</header>
+
+
+
+
+
+<section class="semantic-container">
+
+
+<h1 class="semantic-title">
+
+◈ Implementasi Semantic Web
+
+</h1>
+
+
+
+
+
+
+<div class="card-box">
+
+
+<h2>
+
+▤ Tabel Relasi Subject – Predicate – Object
+
+</h2>
+
+
+
+<table>
+
+
+<tr>
+
+<th>Subject</th>
+
+<th>Predicate</th>
+
+<th>Object</th>
+
+<th>Tipe Schema</th>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Falah Zikri</td>
+
+<td>schema:alumniOf</td>
+
+<td>SMA Negeri 2 Raha</td>
+
+<td>Person → HighSchool</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Falah Zikri</td>
+
+<td>schema:studentOf</td>
+
+<td>Universitas Halu Oleo</td>
+
+<td>Person → CollegeOrUniversity</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Falah Zikri</td>
+
+<td>schema:knowsAbout</td>
+
+<td>Laravel</td>
+
+<td>Person → DefinedTerm</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Falah Zikri</td>
+
+<td>schema:knowsAbout</td>
+
+<td>Cloud Computing</td>
+
+<td>Person → DefinedTerm</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Falah Zikri</td>
+
+<td>schema:knowsAbout</td>
+
+<td>Web Development</td>
+
+<td>Person → DefinedTerm</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Falah Zikri</td>
+
+<td>schema:memberOf</td>
+
+<td>HMPS Ilmu Komputer</td>
+
+<td>Person → Organization</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Falah Zikri</td>
+
+<td>schema:subjectOf</td>
+
+<td>Semantic Web Profile Website</td>
+
+<td>Person → CreativeWork</td>
+
+</tr>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card-box">
+
+
+<h2>
+
+◇ Diagram Relasi Semantic Web
+
+</h2>
+
+
+
+<div class="diagram">
+
+
+
+<svg viewBox="0 0 1000 700">
+
+
+<!-- PERSON CENTER -->
+
+<ellipse
+cx="500"
+cy="350"
+rx="150"
+ry="90"
+class="node"
+/>
+
+
+<text
+x="500"
+y="345"
+text-anchor="middle"
+class="text-node">
+Mahasiswa
+</text>
+
+
+<text
+x="500"
+y="385"
+text-anchor="middle"
+class="text-node">
+Falah Zikri
+</text>
+
+
+
+
+<!-- SMA -->
+
+<rect
+x="80"
+y="100"
+width="250"
+height="90"
+rx="15"
+class="node"
+/>
+
+
+<text
+x="205"
+y="155"
+text-anchor="middle"
+class="text-node">
+SMA Negeri 2 Raha
+</text>
+
+
+<line
+x1="330"
+y1="150"
+x2="400"
+y2="290"
+class="line"
+/>
+
+
+<text
+x="335"
+y="225"
+class="relation">
+alumniOf
+</text>
+
+
+
+
+
+
+<!-- UNIVERSITAS -->
+
+
+<rect
+x="80"
+y="330"
+width="250"
+height="90"
+rx="15"
+class="node"
+/>
+
+
+<text
+x="205"
+y="385"
+text-anchor="middle"
+class="text-node">
+Universitas Halu Oleo
+</text>
+
+
+<line
+x1="330"
+y1="375"
+x2="350"
+y2="350"
+class="line"
+/>
+
+
+<text
+x="270"
+y="350"
+class="relation">
+studentOf
+</text>
+
+
+
+
+
+
+
+<!-- LARAVEL -->
+
+
+<rect
+x="720"
+y="100"
+width="200"
+height="80"
+rx="15"
+class="node"
+/>
+
+
+<text
+x="820"
+y="150"
+text-anchor="middle"
+class="text-node">
+Laravel
+</text>
+
+
+<line
+x1="720"
+y1="160"
+x2="640"
+y2="290"
+class="line"
+/>
+
+
+<text
+x="675"
+y="230"
+class="relation">
+knowsAbout
+</text>
+
+
+
+
+
+
+
+<!-- CLOUD -->
+
+<rect
+x="720"
+y="250"
+width="200"
+height="80"
+rx="15"
+class="node"
+/>
+
+
+<text
+x="820"
+y="300"
+text-anchor="middle"
+class="text-node">
+Cloud Computing
+</text>
+
+
+<line
+x1="720"
+y1="290"
+x2="650"
+y2="330"
+class="line"
+/>
+
+
+
+
+
+
+
+<!-- ORGANISASI -->
+
+
+<rect
+x="380"
+y="560"
+width="250"
+height="90"
+rx="15"
+class="node"
+/>
+
+
+<text
+x="505"
+y="615"
+text-anchor="middle"
+class="text-node">
+HMPS Ilmu Komputer
+</text>
+
+
+<line
+x1="505"
+y1="440"
+x2="505"
+y2="560"
+class="line"
+/>
+
+
+<text
+x="525"
+y="510"
+class="relation">
+memberOf
+</text>
+
+
+
+
+
+
+<!-- WEBSITE -->
+
+<rect
+x="720"
+y="430"
+width="220"
+height="90"
+rx="15"
+class="node"
+/>
+
+
+<text
+x="830"
+y="475"
+text-anchor="middle"
+class="text-node">
+Semantic Web
+</text>
+
+
+<text
+x="830"
+y="505"
+text-anchor="middle"
+class="text-node">
+Website
+</text>
+
+
+
+<line
+x1="650"
+y1="380"
+x2="720"
+y2="470"
+class="line"
+/>
+
+
+
+<text
+x="690"
+y="420"
+class="relation">
+subjectOf
+</text>
+
+
+
+</svg>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card-box">
+
+
+<h2>
+
+{} JSON-LD Schema.org
+
+</h2>
+
+
+
+
+<div class="json-box">
+
+
+<pre>
+
+
+{
+"@context":"https://schema.org",
+
+"@type":"Person",
+
+"name":"Falah Zikri",
+
+
+"jobTitle":"Mahasiswa Ilmu Komputer",
+
+
+
+"alumniOf":{
+
+ "@type":"HighSchool",
+
+ "name":"SMA Negeri 2 Raha"
+
+},
+
+
+
+"affiliation":{
+
+ "@type":"Organization",
+
+ "name":"Universitas Halu Oleo",
+
+ "department":"Program Studi Ilmu Komputer",
+
+
+ "member":{
+
+   "@type":"Role",
+
+   "roleName":"Mahasiswa"
+
+ }
+
+},
+
+
+
+"knowsAbout":[
+
+"Laravel",
+
+"Cloud Computing",
+
+"Web Development"
+
+],
+
+
+
+"memberOf":{
+
+ "@type":"Organization",
+
+"name":"HMPS Ilmu Komputer"
+
+}
+
+}
+
+
+</pre>
+
+
+</div>
+
+
+<p>
+
+✓ Validasi di: validator.schema.org
+</p>
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+</body>
+
+</html>
